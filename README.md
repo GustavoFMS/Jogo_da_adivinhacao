@@ -1,4 +1,2 @@
-# Jogo_da_adivinhacao
-### Code
-
+#####Jogo_da_adivinhacao
 → Jogo basico para se distrair um pouco 🕹️ 

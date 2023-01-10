@@ -66,7 +66,10 @@ while(resposta != "N"):
                         else: 
                             print("\nValor incorreto, digite apenas [S] / [N]")
                             resposta = str(input("→ Você deseja continuar? [S] / [N]: ")).upper()
+                            break
+                    break
                 break
-        print(f"\n\nSuas tentativas acabaram :(\nGame Over!\nPontuação final: {pontuacao_total}\n")
+            break
+print(f"\n\nSuas tentativas acabaram :(\nGame Over!\nPontuação final: {pontuacao_total}\n")
 print("*"*40)
 print("*"*40)

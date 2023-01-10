@@ -39,7 +39,7 @@ while(resposta != "N"):
             print("\nValor incorreto, digite novamente!")
             nivel = int(input("→ Qual nivel deseja: "))
 
-        for rodada in range(1, total_tentativas + 1):
+        for rodada in range(5, total_tentativas + 1):
             print(f'\n• Tentativa {rodada} de {total_tentativas}')
             chute = int(input('Digite o numero de chute: '))
             while(total_tentativas!=0):

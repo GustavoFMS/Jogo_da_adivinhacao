@@ -39,8 +39,8 @@ while(resposta != "N"):
             print("\nValor incorreto, digite novamente!")
             nivel = int(input("→ Qual nivel deseja: "))
 
-        for rodada in range(5, total_tentativas + 1):
-            print(f'\n• Tentativa {rodada} de {total_tentativas}')
+        for rodada in range(1, total_tentativas + 1):
+            print(f'\n• Rodada {rodada} de {total_tentativas} tentativas')
             chute = int(input('Digite o numero de chute: '))
             while(total_tentativas!=0):
                 if(chute > numero_adivinhacao):
@@ -51,10 +51,7 @@ while(resposta != "N"):
                     print("O seu chute é menor que o numero")
                     total_tentativas = total_tentativas-1
                     break
-                elif(total_tentativas == 0):
-                    print(f"\n\nGame Over!\nPontuação final: {pontuacao_total}\n")
-                    break
-                else:
+                if(chute == numero_adivinhacao):
                     print(f"\n♥ Parabens, você acertou!\n• O numero a ser adivinhado era: {numero_adivinhacao}")
                     pontuacao_total = pontuacao_total + pontos
                     while(resposta != "N" and resposta != "S"):
@@ -69,6 +66,7 @@ while(resposta != "N"):
                         else: 
                             print("\nValor incorreto, digite apenas [S] / [N]")
                             resposta = str(input("→ Você deseja continuar? [S] / [N]: ")).upper()
-                    break
+                break
+        print(f"\n\nSuas tentativas acabaram :(\nGame Over!\nPontuação final: {pontuacao_total}\n")
 print("*"*40)
 print("*"*40)

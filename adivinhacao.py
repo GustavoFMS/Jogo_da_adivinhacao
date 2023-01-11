@@ -40,7 +40,10 @@ while(resposta != "N"):
             if(chute > numero_adivinhacao):
                 print("O seu chute é maior que o numero")
                 total_tentativas = total_tentativas-1
-                break
+                if (total_tentativas == 0):
+                    print(f"\n\nSuas tentativas acabaram :(\nGame Over!\nPontuação final: {pontuacao_total}\n")
+                    print("*"*40)
+                    print("*"*40)
             elif(chute < numero_adivinhacao):
                 print("O seu chute é menor que o numero")
                 total_tentativas = total_tentativas-1

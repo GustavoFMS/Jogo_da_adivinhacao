@@ -15,7 +15,6 @@ pontos = 0
 while(resposta != "N"):
     resposta = " "
     numero_adivinhacao = random.randrange(1,101)
-    print(numero_adivinhacao)
     print("• Qual nivel de dificuldade?")
     print("  (1) Facil (2) Medio (3) Dificil")
 
